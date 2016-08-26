@@ -1,0 +1,9 @@
+c:\users\james\Google Drive\School\Assignments\C#\Lab 11\Lab 11\bin\Debug\Lab 11.exe.config
+c:\users\james\Google Drive\School\Assignments\C#\Lab 11\Lab 11\bin\Debug\Lab 11.exe
+c:\users\james\Google Drive\School\Assignments\C#\Lab 11\Lab 11\bin\Debug\Lab 11.pdb
+c:\users\james\Google Drive\School\Assignments\C#\Lab 11\Lab 11\obj\Debug\Lab 11.csprojResolveAssemblyReference.cache
+c:\users\james\Google Drive\School\Assignments\C#\Lab 11\Lab 11\obj\Debug\Lab_11.Form1.resources
+c:\users\james\Google Drive\School\Assignments\C#\Lab 11\Lab 11\obj\Debug\Lab_11.Properties.Resources.resources
+c:\users\james\Google Drive\School\Assignments\C#\Lab 11\Lab 11\obj\Debug\Lab 11.csproj.GenerateResource.Cache
+c:\users\james\Google Drive\School\Assignments\C#\Lab 11\Lab 11\obj\Debug\Lab 11.exe
+c:\users\james\Google Drive\School\Assignments\C#\Lab 11\Lab 11\obj\Debug\Lab 11.pdb

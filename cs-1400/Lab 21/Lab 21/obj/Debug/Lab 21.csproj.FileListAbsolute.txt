@@ -1,0 +1,6 @@
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 21\Lab 21\bin\Debug\Lab 21.exe.config
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 21\Lab 21\bin\Debug\Lab 21.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 21\Lab 21\bin\Debug\Lab 21.pdb
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 21\Lab 21\obj\Debug\Lab 21.csprojResolveAssemblyReference.cache
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 21\Lab 21\obj\Debug\Lab 21.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 21\Lab 21\obj\Debug\Lab 21.pdb

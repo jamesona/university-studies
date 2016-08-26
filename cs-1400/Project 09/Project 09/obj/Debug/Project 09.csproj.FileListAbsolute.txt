@@ -1,0 +1,6 @@
+C:\Users\james\Google Drive\School\Assignments\C#\Project 09\Project 09\bin\Debug\Project 09.exe.config
+C:\Users\james\Google Drive\School\Assignments\C#\Project 09\Project 09\obj\Debug\Project 09.csprojResolveAssemblyReference.cache
+C:\Users\james\Google Drive\School\Assignments\C#\Project 09\Project 09\bin\Debug\Project 09.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Project 09\Project 09\bin\Debug\Project 09.pdb
+C:\Users\james\Google Drive\School\Assignments\C#\Project 09\Project 09\obj\Debug\Project 09.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Project 09\Project 09\obj\Debug\Project 09.pdb

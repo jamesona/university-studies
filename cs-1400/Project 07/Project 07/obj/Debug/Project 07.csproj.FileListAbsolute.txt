@@ -1,0 +1,6 @@
+C:\Users\james\Google Drive\School\Assignments\C#\Project 07\Project 07\bin\Debug\Project 07.exe.config
+C:\Users\james\Google Drive\School\Assignments\C#\Project 07\Project 07\bin\Debug\Project 07.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Project 07\Project 07\bin\Debug\Project 07.pdb
+C:\Users\james\Google Drive\School\Assignments\C#\Project 07\Project 07\obj\Debug\Project 07.csprojResolveAssemblyReference.cache
+C:\Users\james\Google Drive\School\Assignments\C#\Project 07\Project 07\obj\Debug\Project 07.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Project 07\Project 07\obj\Debug\Project 07.pdb

@@ -1,0 +1,9 @@
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 17\Lab 17\bin\Debug\Lab 17.exe.config
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 17\Lab 17\bin\Debug\Lab 17.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 17\Lab 17\bin\Debug\Lab 17.pdb
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 17\Lab 17\obj\Debug\Lab 17.csprojResolveAssemblyReference.cache
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 17\Lab 17\obj\Debug\Lab_17.Form1.resources
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 17\Lab 17\obj\Debug\Lab_17.Properties.Resources.resources
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 17\Lab 17\obj\Debug\Lab 17.csproj.GenerateResource.Cache
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 17\Lab 17\obj\Debug\Lab 17.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Lab 17\Lab 17\obj\Debug\Lab 17.pdb

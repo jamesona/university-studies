@@ -1,0 +1,9 @@
+C:\Users\james\Google Drive\School\Assignments\C#\Project 05\Project 05\bin\Debug\Project 05.exe.config
+C:\Users\james\Google Drive\School\Assignments\C#\Project 05\Project 05\bin\Debug\Project 05.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Project 05\Project 05\bin\Debug\Project 05.pdb
+C:\Users\james\Google Drive\School\Assignments\C#\Project 05\Project 05\obj\Debug\Project 05.csprojResolveAssemblyReference.cache
+C:\Users\james\Google Drive\School\Assignments\C#\Project 05\Project 05\obj\Debug\Project_05.Form1.resources
+C:\Users\james\Google Drive\School\Assignments\C#\Project 05\Project 05\obj\Debug\Project_05.Properties.Resources.resources
+C:\Users\james\Google Drive\School\Assignments\C#\Project 05\Project 05\obj\Debug\Project 05.csproj.GenerateResource.Cache
+C:\Users\james\Google Drive\School\Assignments\C#\Project 05\Project 05\obj\Debug\Project 05.exe
+C:\Users\james\Google Drive\School\Assignments\C#\Project 05\Project 05\obj\Debug\Project 05.pdb
