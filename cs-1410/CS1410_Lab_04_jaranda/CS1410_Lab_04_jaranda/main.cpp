@@ -18,6 +18,7 @@
 // Post-conditions: 
 
 #include "stdafx.h"
+#include "MyRectangle.h"
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -27,6 +28,13 @@ using namespace std;
 
 int main()
 {
+	const int WIDTH = 4, HEIGHT = 7;
+
+	MyRectangle rectangle = MyRectangle::MyRectangle(WIDTH, HEIGHT);
+	cout << "Rectangle width: " << rectangle.getWidth() << endl;
+	cout << "Rectangle height: " << rectangle.getHeight() << endl;
+	cout << "Rectangle area: " << rectangle.getArea() << endl;
+	cin.get();
 	return 0;
 }
 
