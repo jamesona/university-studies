@@ -2,7 +2,11 @@
 // Assignment: CS1410_Lab_04_jaranda
 // Instructor: Craig Sharp
 // Class: CS 1410 -- 002
+<<<<<<< HEAD
+// Date Written: 2/2/2017 2:43:41 PM
+=======
 // Date Written: 1/28/2017 11:24:26 PM
+>>>>>>> e91c992f88640fc17b57df347e624e184a348d2e
 // Description: 
 
 // I declare that the following code was written by me or provided
@@ -18,7 +22,10 @@
 // Post-conditions: 
 
 #include "stdafx.h"
+<<<<<<< HEAD
+=======
 #include "MyRectangle.h"
+>>>>>>> e91c992f88640fc17b57df347e624e184a348d2e
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -28,6 +35,8 @@ using namespace std;
 
 int main()
 {
+<<<<<<< HEAD
+=======
 	const int WIDTH = 4, HEIGHT = 7;
 
 	MyRectangle rectangle = MyRectangle::MyRectangle(WIDTH, HEIGHT);
@@ -35,6 +44,7 @@ int main()
 	cout << "Rectangle height: " << rectangle.getHeight() << endl;
 	cout << "Rectangle area: " << rectangle.getArea() << endl;
 	cin.get();
+>>>>>>> e91c992f88640fc17b57df347e624e184a348d2e
 	return 0;
 }
 

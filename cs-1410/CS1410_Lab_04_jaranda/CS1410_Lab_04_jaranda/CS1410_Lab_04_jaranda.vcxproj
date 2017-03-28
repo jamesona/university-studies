@@ -144,13 +144,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
+<<<<<<< HEAD
+=======
     <ClInclude Include="MyRectangle.h" />
+>>>>>>> e91c992f88640fc17b57df347e624e184a348d2e
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+<<<<<<< HEAD
+=======
     <ClCompile Include="MyRectangle.cpp" />
+>>>>>>> e91c992f88640fc17b57df347e624e184a348d2e
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
