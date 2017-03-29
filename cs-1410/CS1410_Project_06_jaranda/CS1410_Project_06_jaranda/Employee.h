@@ -1,21 +1,29 @@
-/* Employee
-================================
-	- id : int
-	- name : string
-	- address : string
-	- phoneNumber : string
-	- hourlyWage : double
-	- hoursWorked : double
-================================
-	+ id() : int
-	+ name(newName : string) : string
-	+ address(newAddress : string) : string
-	+ phoneNumber(newPhone : string) : string
-	+ hourlyWage(newWage : double) : double
-	+ hoursWorked(newHours : double) : double
-	+ addHours(hours : double) : double
-	+ resetHours() : void
-	+ calcPay() : double
+/* 
+.....................................................
+....+-------------------------------------------+....
+....|                 Employee                  |....
+....+-------------------------------------------+....
+....| - _number : int                           |.... 
+....| - _name : string                          |....
+....| - _address : string                       |....
+....| - _phoneNumber : string                   |....
+....| - _hourlyWage : double                    |....
+....| - _hoursWorked : double                   |....
+....+-------------------------------------------+....
+....| + printCheck() : void        <<static>>   |....
+....| + read() : Employee          <<static>>   |....
+....| + write() : void             <<static>>   |....
+....| + number() : int                          |....
+....| + name(newName : string) : string         |....
+....| + address(newAddress : string) : string   |....
+....| + phoneNumber(newPhone : string) : string |....
+....| + hourlyWage(newWage : double) : double   |....
+....| + hoursWorked(newHours : double) : double |....
+....| + addHours(hours : double) : double       |....
+....| + resetHours() : void                     |....
+....| + calcPay() : double                      |....
+....+-------------------------------------------+....
+.....................................................
 */
 
 
@@ -55,6 +63,14 @@ public:
 	static const double FED_TAX;
 	static const double STATE_TAX;
 
+	// Function Name: Employee::printCheck
+	// Purpose: Prints itemized paycheck for employee
+	// Parameters: Employee employee, string company_name, string bank_name, int check_width
+	// Returns: none
+	// Pre-conditions: none
+	// Post-conditions: none
+	static void printCheck(Employee, std::string, std::string, int);
+
 	// Function Name: Employee::read
 	// Purpose: Generate a new Employee object from file
 	// Parameters: ifstream&
@@ -63,7 +79,6 @@ public:
 	// Post-conditions: none
 	static Employee read(std::ifstream&);
 
-	
 	// Function Name: Employee::write
 	// Purpose: Write employee object to file
 	// Parameters: ofstream&
@@ -71,14 +86,6 @@ public:
 	// Pre-conditions: none
 	// Post-conditions: none
 	void write(std::ofstream&);
-
-	// Function Name: Employee::printCheck
-	// Purpose: Prints itemized paycheck for employee
-	// Parameters: Employee employee, string company_name, string bank_name, int check_width
-	// Returns: none
-	// Pre-conditions: none
-	// Post-conditions: none
-	static void printCheck(Employee, std::string, std::string, int);
 	
 	// Function Name: Employee::number
 	// Purpose: Return the unique ID number of the employee

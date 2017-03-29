@@ -19,6 +19,14 @@ const string COMPANY_NAME = "FluffShuffle Electronics",
 			 BANK_NAME = "United Bank of Eastern Orem";
 const int JUSTIFY_WIDTH = 80;
 
+void promptExit()
+{
+	cin.ignore();
+	cout << "\n\n\nPress any key to exit." << endl;
+	cin.clear();
+	cin.get();
+}
+
 int main()
 {
 	string fileName = "employees.csv";
@@ -33,6 +41,16 @@ int main()
 		// create a file
 		ofstream employeeFile;
 		employeeFile.open(fileName);
+
+		try {
+			if (!employeeFile)
+				throw runtime_error("Couldn't open file for writing!");
+		}
+		catch (const exception& e) {
+			cout << e.what();
+			promptExit();
+			return 1;
+		}
 
 		Employee joe(37, "Joe Brown", "123 Main St.", "123-6788", 45, 10.00);
 		Employee sam(21, "Sam Jones", "45 East State", "661-9000", 30, 12.00);
@@ -57,13 +75,21 @@ int main()
 		cout << "Please enter the name of the employee file: ";
 		cin.ignore();
 		cin >> fileName;
-		
 		ifstream inputFile(fileName);
-		if (inputFile.is_open())
+		try {
+			if (!inputFile)
+				throw runtime_error("Couldn't read file \"" + fileName + "\"");
+		}
+		catch (const exception& e) {
+			cout << e.what();
+			promptExit();
+			return 1;
+		}
+
+		while (!inputFile.eof()) 
 		{
-			while (!inputFile.eof()) {
-				employees.push_back(Employee::read(inputFile));
-			}
+			Employee next = Employee::read(inputFile);
+			if (next.number() > -1)	employees.push_back(next);
 		}
 
 		for (vector<Employee>::iterator it = employees.begin(); it != employees.end(); ++it)
@@ -73,10 +99,7 @@ int main()
 		}
 	}
 	
-	cin.ignore();
-	cout << "\n\n\nPress any key to exit." << endl;
-	cin.clear();
-	cin.get();
+	promptExit();
 	return 0;
 }
 

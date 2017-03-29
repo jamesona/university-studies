@@ -143,8 +143,14 @@ Employee Employee::read(std::ifstream& infile)
 	std::vector<std::string> values;
 
 	getline(infile, line);
-	std::istringstream stream(line);
 
+	if (line == "")
+	{
+		Employee null(-1);
+		return null;
+	}
+
+	std::istringstream stream(line);
 	for (std::string each; std::getline(stream, each, ',');values.push_back(each));
 	
 	number = values[0];
