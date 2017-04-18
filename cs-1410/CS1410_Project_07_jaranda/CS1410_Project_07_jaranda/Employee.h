@@ -19,7 +19,6 @@
 .....................................................
 */
 
-
 #pragma once
 #include <string>
 #include <fstream>
@@ -51,20 +50,9 @@ public:
 	static const double FED_TAX;
 	static const double STATE_TAX;
 
-	Employee();
-
-	Employee(
-		int number,
-		std::string employeeName,
-		std::string employeeAddress,
-		std::string employeePhone,
-		double startingWage,
-		double hoursWorked
-		);
-
 	virtual ~Employee();
 
-	static Employee* read(std::ifstream&);
+	//static Employee* read(std::ifstream&);
 
 	// Function Name: Employee::getEmployeeNumber
 	// Purpose: Return the unique ID number of the employee

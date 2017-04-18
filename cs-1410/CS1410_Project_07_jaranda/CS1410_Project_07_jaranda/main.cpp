@@ -10,14 +10,9 @@
 // code from any other source constitutes cheating, and that I will receive 
 // a zero on this project if I am found in violation of this policy.
 
-// Function Name: 
-// Purpose: 
-// Parameters: 
-// Returns: 
-// Pre-conditions: 
-// Post-conditions: 
-
 #include "stdafx.h"
+#include "HourlyEmployee.h"
+#include "SalariedEmployee.h"
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -27,6 +22,13 @@ using namespace std;
 
 int main()
 {
+	vector<Employee *> employees;
+
+	employees.push_back(new HourlyEmployee(1, "H. Potter", "Privet Drive", "201-9090", 40, 12.00));
+	employees.push_back(new SalariedEmployee(2, "A. Dumbledore", "Hogwarts", "803-1230", 1200));
+	employees.push_back(new HourlyEmployee(3, "R. Weasley", "The Burrow", "892-2000", 40, 10.00));
+	employees.push_back(new SalariedEmployee(4, "R. Hagrid", "Hogwarts", "910-8765", 1000));
+
 	return 0;
 }
 

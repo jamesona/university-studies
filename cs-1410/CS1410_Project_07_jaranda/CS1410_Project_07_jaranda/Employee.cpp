@@ -9,6 +9,7 @@ const double Employee::STATE_TAX = 0.075; // State income tax; 7.5%
 
 Employee::~Employee()
 {
+
 }
 
 int Employee::getEmployeeNumber()
@@ -26,13 +27,6 @@ std::string Employee::getAddress()
 std::string Employee::getPhone()
 {
 	return _phone;
-}
-
-Employee* Employee::read(std::ifstream& infile)
-{
-	Employee* emp;
-	emp->readData(infile);
-	return emp;
 }
 
 std::string centerText(int width, const std::string& str, char fill = ' ') {

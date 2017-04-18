@@ -1,19 +1,34 @@
 #include "stdafx.h"
 #include "HourlyEmployee.h"
 
+HourlyEmployee::HourlyEmployee()
+{
+
+}
+
+HourlyEmployee::HourlyEmployee(int number, std::string name, std::string address, std::string phone, double wage, double hours)
+{
+	_number = number;
+	_name = name;
+	_address = address;
+	_phone = phone;
+	_hourlyWage = wage;
+	_hoursWorked = hours;
+}
+
 Employee* HourlyEmployee::read(std::ifstream& infile)
 {
-	HourlyEmployee* emp;
+	HourlyEmployee* emp = new HourlyEmployee;
 	emp->readData(infile);
 	return emp;
 }
 
 void HourlyEmployee::readData(std::ifstream& infile)
 {
-	std::string line, value, number, name, address, phone, hours, wage;
+	std::string line;
 	std::vector<std::string> values;
 
-	getline(infile, line);
+	std::getline(infile, line);
 
 	if (line == "")
 	{
@@ -22,15 +37,12 @@ void HourlyEmployee::readData(std::ifstream& infile)
 
 	std::istringstream stream(line);
 	for (std::string each; std::getline(stream, each, ','); values.push_back(each));
-	number = values[0];
-	name = values[1];
-	address = values[2];
-	phone = values[3];
-	hours = values[4];
-	wage = values[5];
-
-	HourlyEmployee newEmployee(stoi(number), name, address, phone, stof(wage), stof(hours));
-	emp = newEmployee;
+	//_number = stoi(values[0]);
+	//_name = values[1];
+	//_address = values[2];
+	//_phone = values[3];
+	//_hours = stof(values[4]);
+	//_wage = stof(values[5]);
 }
 
 double HourlyEmployee::getHourlyWage()
@@ -75,3 +87,12 @@ void HourlyEmployee::printCheck(std::string company, std::string bank, int width
 	std::cout << "Hourly Rate: " << std::fixed << std::setprecision(2) << getHourlyWage() << std::endl;
 }
 
+double HourlyEmployee::calcPay()
+{
+	return 0;
+}
+
+HourlyEmployee::~HourlyEmployee()
+{
+
+}

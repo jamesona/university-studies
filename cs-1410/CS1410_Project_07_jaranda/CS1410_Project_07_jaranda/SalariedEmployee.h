@@ -39,6 +39,10 @@ private:
 	void readData(std::ifstream&);
 
 public:
+	SalariedEmployee();
+
+	SalariedEmployee(int, std::string, std::string, std::string, double);
+
 	~SalariedEmployee();
 
 	static Employee* SalariedEmployee::read(std::ifstream&);

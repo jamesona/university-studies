@@ -26,6 +26,10 @@
 class HourlyEmployee : public Employee
 {
 private:
+	int _number;
+	std::string _name;
+	std::string _address;
+	std::string _phone;
 	double _hourlyWage;
 	double _hoursWorked;
 
@@ -38,6 +42,10 @@ private:
 	void readData(std::ifstream&);
 
 public:
+	HourlyEmployee();
+
+	HourlyEmployee(int, std::string, std::string, std::string, double, double);
+
 	~HourlyEmployee();
 
 	static Employee* HourlyEmployee::read(std::ifstream&);
