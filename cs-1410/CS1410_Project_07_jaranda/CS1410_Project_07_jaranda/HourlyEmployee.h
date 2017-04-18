@@ -29,10 +29,18 @@ private:
 	double _hourlyWage;
 	double _hoursWorked;
 
-	void readData();
+	// Function Name: HourlyEmployee::readData
+	// Purpose: Read employee data from file
+	// Parameters: none
+	// Returns: none
+	// Pre-conditions: none
+	// Post-conditions: none
+	void readData(std::ifstream&);
 
 public:
-	~Employee();
+	~HourlyEmployee();
+
+	static Employee* HourlyEmployee::read(std::ifstream&);
 
 	// Function Name: Employee::getHourlyWage
 	// Purpose: Return the employee's current hourly wage

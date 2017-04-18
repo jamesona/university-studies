@@ -30,33 +30,9 @@ std::string Employee::getPhone()
 
 Employee* Employee::read(std::ifstream& infile)
 {
-	std::string line, value, number, name, address, phone, hours, wage;
-	std::vector<std::string> values;
-
-	getline(infile, line);
-
-	if (line == "")
-	{
-		return nullptr;
-	}
-
-	std::istringstream stream(line);
-	for (std::string each; std::getline(stream, each, ',');values.push_back(each));
-	
-	number = values[0];
-	name = values[1];
-	address = values[2];
-	phone = values[3];
-	hours = values[4];
-	wage = values[5];
-
-	Employee newEmployee(stoi(number), name, address, phone, stof(wage), stof(hours));
-	return newEmployee;
-}
-
-void Employee::readData(std::ifstream& input, Employee emp)
-{
-
+	Employee* emp;
+	emp->readData(infile);
+	return emp;
 }
 
 std::string centerText(int width, const std::string& str, char fill = ' ') {

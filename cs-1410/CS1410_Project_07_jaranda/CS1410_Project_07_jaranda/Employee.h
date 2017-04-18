@@ -43,7 +43,7 @@ private:
 	// Returns: none
 	// Pre-conditions: none
 	// Post-conditions: none
-	virtual void readData(std::ifstream&, Employee&) = 0;
+	virtual void readData(std::ifstream&) = 0;
 
 public:
 	static const int OVERTIME;

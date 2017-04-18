@@ -30,10 +30,18 @@ private:
 	std::string _phone;
 	double _weeklySalary;
 
-	void readData();
+	// Function Name: SalariedEmployee::readData
+	// Purpose: Read employee data from file
+	// Parameters: none
+	// Returns: none
+	// Pre-conditions: none
+	// Post-conditions: none
+	void readData(std::ifstream&);
 
 public:
-	~Employee();
+	~SalariedEmployee();
+
+	static Employee* SalariedEmployee::read(std::ifstream&);
 
 	// Function Name: Employee::getWeeklySalary
 	// Purpose: Return total pay for the week

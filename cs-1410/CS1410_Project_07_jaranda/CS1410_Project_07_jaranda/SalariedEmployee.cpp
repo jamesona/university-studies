@@ -1,35 +1,11 @@
 #include "stdafx.h"
 #include "SalariedEmployee.h"
 
-void SalariedEmployee::write(std::ofstream& outfile)
+Employee* SalariedEmployee::read(std::ifstream& infile)
 {
-	outfile << this->number() << ','
-		<< this->name() << ','
-		<< this->address() << ','
-		<< this->phoneNumber() << ','
-		<< this->hourlyWage() << ','
-		<< this->hoursWorked()
-		<< std::endl;
-}
-
-void SalariedEmployee::printCheck(std::string company, std::string bank, int width)
-{
-	const std::string PAYTEXT = "Pay to the order of ";
-	std::string name = employee.name(),
-		wage = std::to_string(employee.calcPay());
-
-	std::cout << centerText(width, company, '-') << std::endl << std::endl;
-
-	std::cout << PAYTEXT << std::left
-		<< std::setw(width - PAYTEXT.length() - name.length())
-		<< std::setfill('.') << name << '$';
-
-	std::cout << std::fixed << std::setprecision(2) << employee.calcPay() << std::endl << std::endl << std::endl;
-
-	std::cout << bank << std::endl;
-	std::cout << centerText(width, "", '-') << std::endl;
-
-	std::cout << "Salary: " << std::fixed << std::setprecision(2) << employee.getWeeklySalary() << std::endl;
+	SalariedEmployee* emp;
+	emp->readData(infile);
+	return emp;
 }
 
 Employee* SalariedEmployee::readData(std::ifstream& infile)
@@ -57,4 +33,34 @@ Employee* SalariedEmployee::readData(std::ifstream& infile)
 
 	Employee newEmployee(stoi(number), name, address, phone, stof(wage), stof(hours));
 	return newEmployee;
+}
+
+void SalariedEmployee::write(std::ofstream& outfile)
+{
+	outfile << getEmployeeNumber() << ','
+		<< getName() << ','
+		<< getAddress() << ','
+		<< getPhone() << ','
+		<< getWeeklySalary()
+		<< std::endl;
+}
+
+void SalariedEmployee::printCheck(std::string company, std::string bank, int width)
+{
+	const std::string PAYTEXT = "Pay to the order of ";
+	std::string name = employee.name(),
+		wage = std::to_string(employee.calcPay());
+
+	std::cout << centerText(width, company, '-') << std::endl << std::endl;
+
+	std::cout << PAYTEXT << std::left
+		<< std::setw(width - PAYTEXT.length() - name.length())
+		<< std::setfill('.') << name << '$';
+
+	std::cout << std::fixed << std::setprecision(2) << employee.calcPay() << std::endl << std::endl << std::endl;
+
+	std::cout << bank << std::endl;
+	std::cout << centerText(width, "", '-') << std::endl;
+
+	std::cout << "Salary: " << std::fixed << std::setprecision(2) << employee.getWeeklySalary() << std::endl;
 }
