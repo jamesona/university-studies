@@ -8,10 +8,10 @@ HourlyEmployee::HourlyEmployee()
 
 HourlyEmployee::HourlyEmployee(int number, std::string name, std::string address, std::string phone, double wage, double hours)
 {
-	_number = number;
-	_name = name;
-	_address = address;
-	_phone = phone;
+	Employee::_number = number;
+	Employee::_name = name;
+	Employee::_address = address;
+	Employee::_phone = phone;
 	_hourlyWage = wage;
 	_hoursWorked = hours;
 }
@@ -28,21 +28,22 @@ void HourlyEmployee::readData(std::ifstream& infile)
 	std::string line;
 	std::vector<std::string> values;
 
-	std::getline(infile, line);
-
-	if (line == "")
+	for (int i = 0; i < 6; i++)
 	{
-		return;
+		std::getline(infile, line);
+		if (line == "")
+		{
+			return;
+		}
+		values.push_back(line);
 	}
 
-	std::istringstream stream(line);
-	for (std::string each; std::getline(stream, each, ','); values.push_back(each));
-	//_number = stoi(values[0]);
-	//_name = values[1];
-	//_address = values[2];
-	//_phone = values[3];
-	//_hours = stof(values[4]);
-	//_wage = stof(values[5]);
+	Employee::_number = stoi(values[0]);
+	Employee::_name = values[1];
+	Employee::_address = values[2];
+	Employee::_phone = values[3];
+	_hourlyWage = stof(values[4]);
+	_hoursWorked = stof(values[5]);
 }
 
 double HourlyEmployee::getHourlyWage()
@@ -57,13 +58,12 @@ double HourlyEmployee::getHoursWorked()
 
 void HourlyEmployee::write(std::ofstream& outfile)
 {
-	outfile << getEmployeeNumber() << ','
-		<< getName() << ','
-		<< getAddress() << ','
-		<< getPhone() << ','
-		<< getHourlyWage() << ','
-		<< getHoursWorked()
-		<< std::endl;
+	outfile << getEmployeeNumber() << '\n'
+		<< getName() << '\n'
+		<< getAddress() << '\n'
+		<< getPhone() << '\n'
+		<< getHourlyWage() << '\n'
+		<< getHoursWorked() << '\n';
 }
 
 void HourlyEmployee::printCheck(std::string company, std::string bank, int width)
@@ -89,7 +89,8 @@ void HourlyEmployee::printCheck(std::string company, std::string bank, int width
 
 double HourlyEmployee::calcPay()
 {
-	return 0;
+	double grossPay = getHourlyWage() * getHoursWorked();
+	return Employee::netPay(grossPay);
 }
 
 HourlyEmployee::~HourlyEmployee()

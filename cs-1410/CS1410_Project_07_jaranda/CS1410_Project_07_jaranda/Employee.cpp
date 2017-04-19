@@ -12,21 +12,41 @@ Employee::~Employee()
 
 }
 
-int Employee::getEmployeeNumber()
+int const & Employee::getEmployeeNumber()
 {
 	return _number;
 }
-std::string Employee::getName()
+std::string const & Employee::getName()
 {
 	return _name;
 }
-std::string Employee::getAddress()
+std::string const & Employee::getAddress()
 {
 	return _address;
 }
-std::string Employee::getPhone()
+std::string const & Employee::getPhone()
 {
 	return _phone;
+}
+
+double Employee::federalTax(double gross)
+{
+	return gross * FED_TAX;
+}
+
+double Employee::stateTax(double gross)
+{
+	return gross * STATE_TAX;
+}
+
+double Employee::netPay(double gross)
+{
+	double netPay = gross;
+
+	netPay -= Employee::federalTax(gross);
+	netPay -= Employee::stateTax(gross);
+
+	return netPay;
 }
 
 std::string centerText(int width, const std::string& str, char fill = ' ') {

@@ -26,10 +26,6 @@
 class HourlyEmployee : public Employee
 {
 private:
-	int _number;
-	std::string _name;
-	std::string _address;
-	std::string _phone;
 	double _hourlyWage;
 	double _hoursWorked;
 

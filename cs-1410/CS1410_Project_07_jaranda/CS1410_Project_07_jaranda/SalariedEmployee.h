@@ -24,10 +24,6 @@
 class SalariedEmployee : public Employee
 {
 private:
-	int _number;
-	std::string _name;
-	std::string _address;
-	std::string _phone;
 	double _weeklySalary;
 
 	// Function Name: SalariedEmployee::readData

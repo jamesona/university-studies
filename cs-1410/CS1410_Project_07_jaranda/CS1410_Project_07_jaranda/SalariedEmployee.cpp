@@ -8,10 +8,10 @@ SalariedEmployee::SalariedEmployee()
 
 SalariedEmployee::SalariedEmployee(int number, std::string name, std::string address, std::string phone, double weekly)
 {
-	_number = number;
-	_name = name;
-	_address = address;
-	_phone = phone;
+	Employee::_number = number;
+	Employee::_name = name;
+	Employee::_address = address;
+	Employee::_phone = phone;
 	_weeklySalary = weekly;
 }
 
@@ -27,30 +27,30 @@ void SalariedEmployee::readData(std::ifstream& infile)
 	std::string line;
 	std::vector<std::string> values;
 
-	getline(infile, line);
-
-	if (line == "")
+	for (int i = 0; i < 5; i++)
 	{
-		return;
+		std::getline(infile, line);
+		if (line == "")
+		{
+			return;
+		}
+		values.push_back(line);
 	}
 
-	std::istringstream stream(line);
-	for (std::string each; std::getline(stream, each, ','); values.push_back(each));
-
-	//number = stoi(values[0]);
-	//name = values[1];
-	//address = values[2];
-	//phone = values[3];
+	Employee::_number = stoi(values[0]);
+	Employee::_name = values[1];
+	Employee::_address = values[2];
+	Employee::_phone = values[3];
+	_weeklySalary = stof(values[4]);
 }
 
 void SalariedEmployee::write(std::ofstream& outfile)
 {
-	outfile << getEmployeeNumber() << ','
-		<< getName() << ','
-		<< getAddress() << ','
-		<< getPhone() << ','
-		<< getWeeklySalary()
-		<< std::endl;
+	outfile << getEmployeeNumber() << '\n'
+		<< getName() << '\n'
+		<< getAddress() << '\n'
+		<< getPhone() << '\n'
+		<< getWeeklySalary() << '\n';
 }
 
 double SalariedEmployee::getWeeklySalary()
@@ -80,7 +80,8 @@ void SalariedEmployee::printCheck(std::string company, std::string bank, int wid
 
 double SalariedEmployee::calcPay()
 {
-	return 0;
+	double grossPay = getWeeklySalary();
+	return Employee::netPay(grossPay);
 }
 
 SalariedEmployee::~SalariedEmployee()

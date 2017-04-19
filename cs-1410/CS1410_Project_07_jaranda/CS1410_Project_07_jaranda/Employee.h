@@ -31,6 +31,8 @@ class Employee
 {
 private:
 	static int id_counter;
+
+protected:
 	int _number;
 	std::string _name;
 	std::string _address;
@@ -60,7 +62,7 @@ public:
 	// Returns: int number
 	// Pre-conditions: none
 	// Post-conditions: none
-	int getEmployeeNumber();
+	int const & getEmployeeNumber();
 	
 	// Function Name: Employee::getName
 	// Purpose: Return the name of the employee
@@ -68,7 +70,7 @@ public:
 	// Returns: string name
 	// Pre-conditions: none
 	// Post-conditions: none
-	std::string getName();
+	std::string const & getName();
 	
 	// Function Name: Employee::getAddress
 	// Purpose: Return the address of the employee
@@ -76,7 +78,7 @@ public:
 	// Returns: string address
 	// Pre-conditions: none
 	// Post-conditions: none
-	std::string getAddress();
+	std::string const & getAddress();
 	
 	// Function Name: Employee::getPhone
 	// Purpose: Return the phone number of the employee
@@ -84,7 +86,7 @@ public:
 	// Returns: string phoneNumber
 	// Pre-conditions: none
 	// Post-conditions: none
-	std::string getPhone();
+	std::string const & getPhone();
 
 	// Function Name: Employee::calcPay
 	// Purpose: Calculate employee's net pay for the period, after tax
@@ -116,7 +118,7 @@ public:
 	// Returns: double netPay
 	// Pre-conditions: none
 	// Post-conditions: none
-	double netPay();
+	double netPay(double);
 
 	// Function Name: Employee::federalTax
 	// Purpose: Calculate federal tax deduction for pay period
@@ -124,7 +126,7 @@ public:
 	// Returns: double netPay
 	// Pre-conditions: none
 	// Post-conditions: none
-	double federalTax();
+	double federalTax(double);
 
 	// Function Name: Employee::stateTax
 	// Purpose: Calculate state tax deduction for pay period
@@ -132,7 +134,7 @@ public:
 	// Returns: double netPay
 	// Pre-conditions: none
 	// Post-conditions: none
-	double stateTax();
+	double stateTax(double);
 };
 
 // Function Name: centerText
