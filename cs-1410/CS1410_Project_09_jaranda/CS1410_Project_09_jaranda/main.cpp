@@ -19,7 +19,7 @@
 // -----------------------------------------
 #include "stdafx.h"
 #include <iostream>
-#include "DynArray.cpp"
+#include "DynArray.h"
 using namespace std;
 
 int main()
