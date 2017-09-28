@@ -1,8 +1,0 @@
-c:\users\jameson\documents\visual studio 2015\Projects\TipCalc\Project 1\bin\Debug\Project 1.exe.config
-c:\users\jameson\documents\visual studio 2015\Projects\TipCalc\Project 1\bin\Debug\Project 1.exe
-c:\users\jameson\documents\visual studio 2015\Projects\TipCalc\Project 1\bin\Debug\Project 1.pdb
-c:\users\jameson\documents\visual studio 2015\Projects\TipCalc\Project 1\obj\Debug\Project_1.Form1.resources
-c:\users\jameson\documents\visual studio 2015\Projects\TipCalc\Project 1\obj\Debug\Project_1.Properties.Resources.resources
-c:\users\jameson\documents\visual studio 2015\Projects\TipCalc\Project 1\obj\Debug\Project 1.csproj.GenerateResource.Cache
-c:\users\jameson\documents\visual studio 2015\Projects\TipCalc\Project 1\obj\Debug\Project 1.exe
-c:\users\jameson\documents\visual studio 2015\Projects\TipCalc\Project 1\obj\Debug\Project 1.pdb
