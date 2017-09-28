@@ -1,6 +1,0 @@
-C:\Users\james\Google Drive\School\Assignments\C#\Lab 16\Lab 16\bin\Debug\Lab 16.exe.config
-C:\Users\james\Google Drive\School\Assignments\C#\Lab 16\Lab 16\obj\Debug\Lab 16.csprojResolveAssemblyReference.cache
-C:\Users\james\Google Drive\School\Assignments\C#\Lab 16\Lab 16\bin\Debug\Lab 16.exe
-C:\Users\james\Google Drive\School\Assignments\C#\Lab 16\Lab 16\bin\Debug\Lab 16.pdb
-C:\Users\james\Google Drive\School\Assignments\C#\Lab 16\Lab 16\obj\Debug\Lab 16.exe
-C:\Users\james\Google Drive\School\Assignments\C#\Lab 16\Lab 16\obj\Debug\Lab 16.pdb
