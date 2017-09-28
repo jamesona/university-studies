@@ -1,5 +1,0 @@
-c:\users\james\documents\visual studio 2015\Projects\Lab 09\Lab 09\bin\Debug\Lab 09.exe.config
-c:\users\james\documents\visual studio 2015\Projects\Lab 09\Lab 09\bin\Debug\Lab 09.exe
-c:\users\james\documents\visual studio 2015\Projects\Lab 09\Lab 09\bin\Debug\Lab 09.pdb
-c:\users\james\documents\visual studio 2015\Projects\Lab 09\Lab 09\obj\Debug\Lab 09.exe
-c:\users\james\documents\visual studio 2015\Projects\Lab 09\Lab 09\obj\Debug\Lab 09.pdb

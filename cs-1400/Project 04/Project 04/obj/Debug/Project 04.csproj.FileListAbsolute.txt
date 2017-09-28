@@ -1,9 +1,0 @@
-C:\Users\Jameson\Google Drive\School\Assignments\C#\Project 04\Project 04\bin\Debug\Project 04.exe.config
-C:\Users\Jameson\Google Drive\School\Assignments\C#\Project 04\Project 04\obj\Debug\Project 04.csprojResolveAssemblyReference.cache
-C:\Users\Jameson\Google Drive\School\Assignments\C#\Project 04\Project 04\obj\Debug\Project_04.Form1.resources
-C:\Users\Jameson\Google Drive\School\Assignments\C#\Project 04\Project 04\obj\Debug\Project_04.Properties.Resources.resources
-C:\Users\Jameson\Google Drive\School\Assignments\C#\Project 04\Project 04\obj\Debug\Project 04.csproj.GenerateResource.Cache
-C:\Users\Jameson\Google Drive\School\Assignments\C#\Project 04\Project 04\bin\Debug\Project 04.exe
-C:\Users\Jameson\Google Drive\School\Assignments\C#\Project 04\Project 04\bin\Debug\Project 04.pdb
-C:\Users\Jameson\Google Drive\School\Assignments\C#\Project 04\Project 04\obj\Debug\Project 04.exe
-C:\Users\Jameson\Google Drive\School\Assignments\C#\Project 04\Project 04\obj\Debug\Project 04.pdb
