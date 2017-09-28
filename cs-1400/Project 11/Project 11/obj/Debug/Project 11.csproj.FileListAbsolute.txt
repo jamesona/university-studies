@@ -1,6 +1,0 @@
-C:\Users\james\Google Drive\School\Assignments\C#\Project 11\Project 11\bin\Debug\Project 11.exe.config
-C:\Users\james\Google Drive\School\Assignments\C#\Project 11\Project 11\obj\Debug\Project 11.csprojResolveAssemblyReference.cache
-C:\Users\james\Google Drive\School\Assignments\C#\Project 11\Project 11\bin\Debug\Project 11.exe
-C:\Users\james\Google Drive\School\Assignments\C#\Project 11\Project 11\bin\Debug\Project 11.pdb
-C:\Users\james\Google Drive\School\Assignments\C#\Project 11\Project 11\obj\Debug\Project 11.exe
-C:\Users\james\Google Drive\School\Assignments\C#\Project 11\Project 11\obj\Debug\Project 11.pdb
