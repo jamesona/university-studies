@@ -6,31 +6,6 @@ using namespace std;
 #include "Queue.h"
 
 int main() {
-	List list1;
-	list1.append('I');
-	list1.prepend('P');
-	list1.prepend('U');
-	list1.append('L');
-	list1.append('S');
-	list1.prepend('P');
-	list1.display(); 
-	list1.reverseDisplay(list1.tail); 
-
-	cout << "Who did?\n" << list1.at(3) << " did, "
-		<< list1.size() << " times." << endl << endl;
-
-	List list2;
-	list2.prepend('A');
-	list2.append('L');
-	list2.prepend('P');
-	list2.append('S');
-	list2.display();
-	list2.reverseDisplay(list2.tail);
-
-	cout << "Too much Dew (said no one ever). I need to "
-		<< list2.at(0) << "ee. Then I'll drink "
-		<< list2.size() << " more." << endl;
-
 	Stack stack;
 	stack.push('L');
 	stack.push('I');
