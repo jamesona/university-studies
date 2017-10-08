@@ -1,5 +1,5 @@
 template <typename T>
-struct SortedList : List {
+struct SortedList : List<T> {
 	int (*compare)(T, T);
 
 	SortedList(int(*comparator)(T, T)) {
@@ -23,8 +23,8 @@ struct SortedList : List {
 			}
 
 			// alias the left and right nodes, so the next part doesn't suck
-			Node* rightNode = cur;
-			Node* leftNode = cur->prev;
+			Node<T>* rightNode = cur;
+			Node<T>* leftNode = cur->prev;
 
 			// now that we know where to put the new node, make it
 			Node<T>* node = new Node<T>(val);

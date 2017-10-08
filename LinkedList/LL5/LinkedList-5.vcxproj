@@ -99,15 +99,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LL2.cpp" />
+    <ClCompile Include="LL3.cpp" />
+    <ClCompile Include="LL4.cpp" />
+    <ClCompile Include="LL5.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="LL1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Employee.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="ListIterator.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="SortedList.h" />
     <ClInclude Include="Stack.h" />
+    <ClInclude Include="Tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

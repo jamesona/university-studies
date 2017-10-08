@@ -1,3 +1,4 @@
+
 template <typename T>
 struct Stack {
 	List<T>* list = new List<T>();

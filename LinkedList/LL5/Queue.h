@@ -1,3 +1,4 @@
+
 template <typename T>
 struct Queue {
 	List<T>* list = new List<T>();
