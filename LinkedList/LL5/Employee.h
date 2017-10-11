@@ -1,8 +1,12 @@
+#include <string>;
+
 struct Employee {
 	string fname;
 	string lname;
 	size_t age;
 	string id;
+
+	Employee() {};
 
 	Employee(string fname, string lname, size_t age, string id) {
 		this->fname = fname;
@@ -11,10 +15,10 @@ struct Employee {
 		this->id = id;
 	}
 
-	//friend ostream& operator<<(ostream& os, const Employee& emp) {
-	//	os << emp.fname << " " << emp.lname << ", " << emp.age << ", id is " << emp.id;
-	//	return os;
-	//}
+	friend ostream& operator<<(ostream& os, const Employee& emp) {
+		os << emp.fname << " " << emp.lname << ", " << emp.age << ", id is " << emp.id;
+		return os;
+	}
 };
 
 int compareEmployeesByFirstName(Employee a, Employee b) {

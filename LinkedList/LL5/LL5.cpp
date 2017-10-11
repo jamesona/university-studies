@@ -2,6 +2,7 @@
 #include "List.h"
 #include "Employee.h"
 #include "SortedList.h"
+#include "ListIterator.h"
 
 int LL5() {
 	cout << "==== Tests for LL5 ====" << endl;
@@ -14,16 +15,16 @@ int LL5() {
 
 	SortedList<Employee> employeeListByFirst(compareEmployeesByFirstName);
 	employeeListByFirst.insert(e1);
-	//employeeListByFirst.insert(e2);
-	//employeeListByFirst.insert(e3);
-	//employeeListByFirst.insert(e4);
-	//employeeListByFirst.insert(e5);
-	//cout << "Employee List Sorted by First Name" << endl;
-	//ListIterator<employee> it(employeeListByFirst);
-	//while (it.hasNext()) {
-	//	cout << it.next();
-	//}
-	//cout << endl;
+	employeeListByFirst.insert(e2);
+	employeeListByFirst.insert(e3);
+	employeeListByFirst.insert(e4);
+	employeeListByFirst.insert(e5);
+	cout << "Employee List Sorted by First Name" << endl;
+	ListIterator<Employee> it(employeeListByFirst);
+	while (it.hasNext()) {
+		cout << it.next() << endl;
+	}
+	cout << endl;
 
 	//TODO repeat with a sorted list of the same employees by last name
 
