@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 #include "Node.h"
 
 template <typename T>

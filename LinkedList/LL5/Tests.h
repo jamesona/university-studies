@@ -1,4 +1,3 @@
-#pragma once
 int LL1();
 int LL2();
 int LL3();

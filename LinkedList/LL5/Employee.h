@@ -1,4 +1,4 @@
-#include <string>;
+#include <string>
 
 struct Employee {
 	string fname;
@@ -20,15 +20,3 @@ struct Employee {
 		return os;
 	}
 };
-
-int compareEmployeesByFirstName(Employee a, Employee b) {
-	return 0;
-}
-
-int compareEmployeesByLastName(Employee a, Employee b) {
-	return 0;
-}
-
-int compareEmployeesByAge(Employee a, Employee b) {
-	return 0;
-}
